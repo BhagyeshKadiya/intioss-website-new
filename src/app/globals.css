@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-intioss-burgundy: #52192B;
+  --color-intioss-burgundy-deep: #3A101D;
+  --color-intioss-gold: #D8B51A;
+  --color-intioss-charcoal: #4F4C4D;
+  --color-intioss-white: #FFFFFF;
+  --color-intioss-ivory: #F7F3EE;
+  --color-intioss-stone: #E8E3DD;
+  --color-intioss-grey: #B8B4B2;
+
+  --font-marcellus: var(--font-marcellus);
+  --font-jost: var(--font-jost);
+  --font-eb-garamond: var(--font-eb-garamond);
+}
+
+body {
+  /* Default typography handled in layout.tsx via utility classes, but setting safe fallbacks here just in case */
+  background-color: var(--color-intioss-ivory);
+  color: var(--color-intioss-charcoal);
+  font-family: var(--font-jost), sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
